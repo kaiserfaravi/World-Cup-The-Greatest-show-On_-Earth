@@ -4,5 +4,66 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 .container{
+    margin: 100px;
     
+}
+.banner{
+    border-radius: 15px;
+    color: white;
+    height: 646px;
+    display: flex;
+    background-color: #161616;
+}
+h1{
+    font-size: 70px;
+
+}
+.text,.banner-player{
+width: 50%;
+padding: 33px;
+}
+.banner-player img{
+    width: 581px;
+    height: 613px;
+}
+.fixed-card{
+ background-color: #161616;
+ border-radius: 15px;
+color: white;
+}
+.players{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 24px;
+} 
+.player{
+    
+    border-radius: 10px;
+    box-shadow: 10px  10px 20px gray;
+    
+}
+.main{
+    display: flex;
+} 
+
+.player img{
+    width: 100%;
+}
+
+.fixed-card{
+    display: flex;
+    width: 25%;
+    height: 312px;
+    margin-right: 24px;
+    border-radius: 10px;
+}
+.card-options{
+    
+
+}
+.transfer{
+    border: 2px solid black;
+    width: 25%;
+    border-radius: 3px;
+    padding: 3px;
 }
