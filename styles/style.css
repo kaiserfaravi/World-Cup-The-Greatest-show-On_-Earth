@@ -7,6 +7,9 @@ body{
     margin: 100px;
     
 }
+
+/* ---------------------------------------------------------------header-part-------------------------------------------------------- */
+
 .banner{
     border-radius: 15px;
     color: white;
@@ -16,8 +19,17 @@ body{
 }
 h1{
     font-size: 70px;
-
 }
+#watch-now-button{
+    background-color: #DD0000;
+    /* margin: 30px; */
+    padding: 10px;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    border-radius: 10px;
+}
+
 .text,.banner-player{
 width: 50%;
 padding: 33px;
@@ -26,11 +38,40 @@ padding: 33px;
     width: 581px;
     height: 613px;
 }
+
+/* -------------------------------------------------player-options--------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------- */
+.main{
+    display: flex;
+} 
+
+
 .fixed-card{
- background-color: #161616;
- border-radius: 15px;
-color: white;
+    background-color: #161616;
+    /* display: flex; */
+    border-radius: 15px;
+    color: white;
+    width: 25%;
+    height: 220px;
+    margin-right: 24px;
+    border-radius: 10px;
 }
+.card-options{
+    padding: 10px;
+    margin: 20px;
+   background-color:white;
+   color: #161616;
+   text-align: center;
+   border-radius: 10px;
+
+}
+
+#blog{
+    background-color: red;
+    color: white;
+}
+
+
 .players{
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -42,28 +83,97 @@ color: white;
     box-shadow: 10px  10px 20px gray;
     
 }
-.main{
-    display: flex;
-} 
 
 .player img{
     width: 100%;
 }
 
-.fixed-card{
-    display: flex;
-    width: 25%;
-    height: 312px;
-    margin-right: 24px;
-    border-radius: 10px;
-}
-.card-options{
-    
-
-}
 .transfer{
     border: 2px solid black;
     width: 25%;
     border-radius: 3px;
     padding: 3px;
 }
+/* ----------------------------------------------Footer------------------------------------------------------------- */
+footer{
+    background-color: #161616;
+
+    color: white;
+}
+footer h3{
+    padding: 50px;
+    font-size: 40px;
+    display: flex; 
+     justify-content: center;
+    align-items: center;
+    /* text-align: center; */
+    font-weight: 600;
+    
+}
+
+.footer-options{
+    display: flex;
+    justify-content:space-around;
+}
+
+/* ---------------------------------------------Responsive-Media-Query------------------------------------------------------------- */
+@media screen and (min-width:689px) and (max-width:990px) {
+    
+.container{
+    margin: 50px;
+    
+}
+
+/* ---------------------------------------------------------------header-part-------------------------------------------------------- */
+
+.banner{
+    border-radius: 15px;
+    color: white;
+    height: 646px;
+    display: flex;
+    background-color: #161616;
+}
+h1{
+    font-size: 40px;
+}
+.text,.banner-player{
+width: 50%;
+padding: 20px;
+}
+.banner-player img{
+    width: 323px;
+    height: 613px;
+}
+/* ---------------------------------------------player option------------------------------------------------------------------------ */
+.main{
+    display: flex;
+    flex-direction: column;
+}
+.fixed-card{
+    display: flex;
+background-color: white;
+color: #161616;
+height: 100px;
+width: 100%;
+border-radius: 10px;
+    
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.card-options{
+    box-shadow: 10px  10px 20px gray;
+    display: flex;
+    width: 100%;
+    height: 35px;
+     justify-content: center;
+    align-items: center;
+}
+.players {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+}
+
+/* --------------------------------------------------------------mobile -view-media-query------------------------------------------ */
